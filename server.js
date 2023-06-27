@@ -31,10 +31,11 @@ db.sequelize.sync()
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Backend rodando com sucesso!" });
 });
 
-require("./app/routes/turorial.routes")(app);
+require("./app/routes/produto.routes")(app);
+require("./app/routes/cliente.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
