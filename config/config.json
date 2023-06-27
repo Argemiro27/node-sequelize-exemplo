@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "wndxxjie",
+    "password": "3iDf0UtANxWLbk1rxVLKFUKgzCMNkTmS",
+    "database": "wndxxjie",
+    "host": "silly.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "wndxxjie",
+    "password": "3iDf0UtANxWLbk1rxVLKFUKgzCMNkTmS",
+    "database": "wndxxjie",
+    "host": "silly.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "wndxxjie",
+    "password": "3iDf0UtANxWLbk1rxVLKFUKgzCMNkTmS",
+    "database": "wndxxjie",
+    "host": "silly.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
