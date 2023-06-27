@@ -10,16 +10,16 @@ module.exports = app => {
   router.get("/", produtos.findAll);
 
   // Retornar um produto específico pelo ID
-  //router.get("/:id", produtos.findOne);
+  router.get("/:id", produtos.findOne);
 
   // Atualizar produto
-  //router.put("/:id", produtos.update);
+  router.put("/:id", produtos.update);
 
   // Deletar produto
-  //router.delete("/:id", produtos.delete);
+  router.delete("/:id", produtos.delete);
 
   // Deletar todos os produtos
-  //router.delete("/", produtos.deleteAll);
+  router.delete("/", produtos.deleteAll);
 
   app.use("/api/produtos", router);
 };

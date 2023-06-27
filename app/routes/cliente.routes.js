@@ -12,16 +12,16 @@ module.exports = app => {
   router.post("/login", auth.login);
 
   // Retornar um cliente específico pelo ID
-  //router.get("/:id", clientes.findOne);
+  router.get("/:id", clientes.findOne);
 
   // Atualizar cliente
-  //router.put("/:id", clientes.update);
+  router.put("/:id", clientes.update);
 
   // Deletar cliente
-  //router.delete("/:id", clientes.delete);
+  router.delete("/:id", clientes.delete);
 
   // Deletar todos os clientes
-  //router.delete("/", clientes.deleteAll);
+  router.delete("/", clientes.deleteAll);
 
   app.use("/api/clientes", router);
 };
